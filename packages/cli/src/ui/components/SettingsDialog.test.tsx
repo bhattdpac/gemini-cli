@@ -260,17 +260,20 @@ describe('SettingsDialog', () => {
       const settings = createMockSettings();
       const onSelect = vi.fn();
 
-      const { stdin, unmount } = render(
+      const { stdin, unmount, lastFrame } = render(
         <SettingsDialog settings={settings} onSelect={onSelect} />,
       );
 
       // Switch to scope focus
       stdin.write('\t'); // Tab key
-      await wait();
+      await wait(200);
+      expect(lastFrame()).toContain('> Apply To'); // Verify focus shifted to scope
 
       // Select different scope (numbers 1-3 typically available)
       stdin.write('2'); // Select second scope option
-      await wait();
+      await wait(200);
+      // Assuming '2' selects 'Workspace' scope, verify its visual representation
+      expect(lastFrame()).toContain('Workspace'); // Check for the selected scope name
 
       unmount();
     });
@@ -285,12 +288,12 @@ describe('SettingsDialog', () => {
 
       // Switch to scope focus
       stdin.write('\t'); // Tab key
-      await wait();
+      await wait(200);
       expect(lastFrame()).toContain('> Apply To');
 
       // Select a scope
       stdin.write('1'); // Select first scope option
-      await wait();
+      await wait(200);
 
       // Should be back to settings focus
       expect(lastFrame()).toContain('  Apply To');
