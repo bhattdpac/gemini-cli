@@ -1,0 +1,25 @@
+Debugging is a key part of contributing.
+
+  Now, let's focus on the SettingsDialog.test.tsx file, as it has multiple timeout failures.
+
+   1. Open the file in VS Code:
+      src/ui/components/SettingsDialog.test.tsx
+
+   2. Examine the failing tests: Look for the it blocks that correspond to these test names:
+       * SettingsDialog > Scope Selection > should switch between scopes
+       * SettingsDialog > Restart Prompt > should handle restart request when r is pressed
+       * SettingsDialog > Escape Key Behavior > should call onSelect with undefined when Escape is pressed
+       * SettingsDialog > Complex State Management > should track modified settings correctly
+       * SettingsDialog > Complex State Management > should handle scrolling when there are many settings
+
+      Pay close attention to what these tests are trying to do and how they interact with the SettingsDialog component. Timeouts often occur
+  when a test is waiting for a UI element to appear or an event to fire, but it never happens, or it takes too long.
+
+   3. Debugging with VS Code (as per `CONTRIBUTING.md`):
+       * You can try to run the tests in debug mode. The CONTRIBUTING.md mentions:
+   1         npm run debug
+          This command runs node --inspect-brk dist/gemini.js and pauses execution until a debugger attaches. You can then use VS Code's
+  "Attach" launch configuration (found in .vscode/launch.json) to connect to the debugger. You can set breakpoints in your test file or the
+  component's source code.
+
+  Start by examining the code for these failing tests. 

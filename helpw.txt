@@ -1,0 +1,140 @@
+Gemini CLI Public Roadmap
+Quarterly Roadmap
+Workstreams
+Features
+All Maintainer Items
+P0 Bugs
+Help Wanted: Testing & Release
+P0 Assignments
+Assignments
+Filter
+is:issue state:open label:maintainer label:"help wanted" -status:Backlog,"To Triage",Closed
+10 (10)matching items
+No Status
+1
+ (1)
+@ auto complete on Windows cause issue with ReadManyFiles
+
+area/core
+
+help wanted
+
+kind/bug
+
+kind/duplicate
+
+kind/issue-triage
+
+maintainer
+
+priority/p1
+
+sub-area/windows
+#3162
+
+Robust Windows Support #5305
+Click a value to filter the view
+Blocked
+1
+ (1)
+Enforce passing tests as a merge requirement
+
+area/contribution
+
+help wanted
+
+maintainer
+
+sub-area/testing
+
+Feature: Testing and CI/CD #3685
+Click a value to filter the view
+Ready for Work
+5
+ (5)
+Implement On PR and On Merge to main NPX/NPM smoke testing.
+
+area/contribution
+
+help wanted
+
+kind/duplicate
+
+maintainer
+
+sub-area/testing
+
+Feature: Testing and CI/CD #3685
+Click a value to filter the view
+Improve integration test output for clarity and usefulness
+
+area/contribution
+
+help wanted
+
+maintainer
+
+sub-area/testing
+
+Feature: Testing and CI/CD #3685
+Click a value to filter the view
+Implement post-deployment verification testing
+
+help wanted
+
+kind/duplicate
+
+maintainer
+
+sub-area/testing
+
+Feature: Testing and CI/CD #3685
+Click a value to filter the view
+In Progress
+3
+ (3)
+Assignees: taeold
+taeold
+Native Executable Install
+
+area/platform
+
+help wanted
+
+maintainer
+
+sub-area/windows
+
+Feature: Open Source Build and Release Infrastructure #3684
+Click a value to filter the view
+Assignees: owenofbrien
+owenofbrien
+Insiders Channel Creation
+
+area/contribution
+
+help wanted
+
+maintainer
+
+sub-area/testing
+
+Feature: Open Source Build and Release Infrastructure #3684
+Click a value to filter the view
+Assignees: moficodes
+moficodes
+Build and publish multi-arch Docker images
+
+area/platform
+
+help wanted
+
+maintainer
+
+sub-area/testing
+
+Feature: Open Source Build and Release Infrastructure #3684
+Click a value to filter the view
+Done
+0
+ (0)
